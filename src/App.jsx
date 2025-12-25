@@ -1,15 +1,16 @@
-import { useState } from 'react'
-
+import { Switch, Route } from "react-router-dom";
+import Home from './layout/Home.jsx';
 //import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>
-     <h1 class="text-3xl font-bold underline text-center">
-        Hello world!
-    </h1>
+      <Switch>
+        <Route exact path='/' component={Home}/>
+      
+      </Switch>
     </>
   )
 }
