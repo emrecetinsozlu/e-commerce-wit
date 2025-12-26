@@ -9,3 +9,15 @@
     font-family: 'Montserrat', sans-serif;
   }
 }
+
+@layer components { 
+    
+    .button-sm {
+        @apply bg-[#23A6F0] text-white px-3 py-1 rounded-sm hover:bg-[#1b87c9] transition;
+    }
+
+    .button-mb {
+        @apply bg-[#3ef023] text-white px-6 py-2 rounded-sm hover:bg-[#1b87c9] transition;
+    }
+
+}
