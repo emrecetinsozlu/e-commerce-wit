@@ -15,24 +15,24 @@ function Header() {
       <div className='flex justify-between items-center'>
         <h3 className='text-2xl font-bold text-[#252B42] m-0'>Bandage</h3>
         <nav className='hidden md:block'>
-          <ul className='flex gap-6 font-normal'>
+          <ul className='flex gap-6 font-bold text-[#737373]'>
               <li className='my-7'>
-                  <NavLink exact to='/' className='text-[#737373]'>Home</NavLink>
+                  <NavLink exact to='/' className=''>Home</NavLink>
               </li>
             <li className='my-7'>
-                <NavLink to='/shop' className='text-[#737373]'>Shop</NavLink>
+                <NavLink to='/shop' >Shop</NavLink>
             </li>
             <li className='my-7'>
-                <NavLink to='/about' className='text-[#737373]'>About</NavLink>
+                <NavLink to='/about' >About</NavLink>
             </li>
             <li className='my-7'>
-                <NavLink to='/blog' className='text-[#737373]'>Blog</NavLink>
+                <NavLink to='/blog'>Blog</NavLink>
             </li>
             <li className='my-7'>
-                <NavLink to='/contact' className='text-[#737373]'>Contact</NavLink>
+                <NavLink to='/contact' >Contact</NavLink>
             </li>
              <li className='my-7'>
-                <NavLink to='/pages' className='text-[#737373]'>Pages</NavLink>
+                <NavLink to='/pages' >Pages</NavLink>
             </li>
           </ul>
         </nav>
@@ -51,11 +51,9 @@ function Header() {
           </button>
         </div>
       </div>
-    </header>
-
-    {isOpen && (
-      <nav className='font-normal text-3xl w-full text-center'>
-        <ul className=''>
+      {isOpen && (
+      <nav className='w-full text-center my-2'>
+        <ul className='text-bold text-2xl'>
           <li className='my-7'>
               <NavLink exact to='/' className='text-[#737373]'>Home</NavLink>
           </li>
@@ -74,6 +72,9 @@ function Header() {
       </ul>
     </nav>
     )}
+    </header>
+
+    
     </>
   )
 }
